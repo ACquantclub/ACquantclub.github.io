@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header-section {
+    height: 200px;
+    width: 100%;
+    background: url('background-photo.jpg') center/cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header-content {
+    text-align: center;
+  }
+  
+  .active-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .past-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .profile {
+    text-align: center;
+    margin: 20px;
+    box-sizing: border-box; /* Ensure padding and border are included in the width calculation */
+  }
+  
+  .profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .profile p {
+    color: #333;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  body {
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .bar {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow-x: hidden;
+    transition: 0.5s;
+    display: none;
+  }
+  
+  .navbar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+  }
+  
+  .navbar a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .navbar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .navbar a:active {
+    background-color: #555;
+  }
+  
