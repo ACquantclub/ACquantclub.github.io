@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Our Team - i2i Amherst Venture Accelerator</title>
   <!-- Favicon -->
-  <link rel="icon" href="images/logo-transparent.png">
+  <link rel="icon" href="images/Logo.jpg">
   <!-- AOS CSS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
   <!-- Hamburger menu (bars) on small screens -->
@@ -18,11 +18,9 @@
   <header class="header">
     <nav class="navbar">
       <a href="/" class="logo">
-        <img class="logo-img" src="images/i2iLogoTextOrange.png" alt="i2i Logo">
+        <img class="logo-img" src="images/Logo.jpg" alt="Logo">
       </a>
-      <a href="./our-team.html" class="nav-link line-hover">Our Team</a></li>
-      <a href="./startups.html" class="nav-link line-hover">Startups</a></li>
-      <a href="./events.html" class="nav-link line-hover">Events</a></li>
+      <a href="./register.html" class="nav-link line-hover">Register for the Amherst Quant Competition</a></li>
       <a href="./get-in-touch.html" class="nav-link line-hover">Get in Touch</a></li>
       <a href="javascript:void(0);" class="icon" onclick="mobileNavbar()">
         <i class="fa fa-bars"></i>
@@ -33,28 +31,37 @@
   <main id="vanta-bg" class="main-content">
     <section class="hero">
       <div class="hero-text" data-aos="fade-right">
-        <h1 class="hero-title">Get in Touch with Our Team</h1>
-    </section>
-
-    <section id="team-info" class="info-sections">
-      <h2 class="section-title">Get in Touch</h2>
-      <p>We’re here to <strong> connect, collaborate, and make an impact together.</strong> Whether you have questions about our programs, ideas to share, or simply want to learn more about what we do, we’d love to hear from you. At I2I, we believe meaningful connections spark meaningful change, and your voice is a vital part of our mission. Reach out to us through the options below, and let’s start building a brighter future—together.</p>
-      <div class="google-form-container">
-        <!-- Replace the src URL with your actual Google Form embed URL -->
-        <iframe 
-          src="https://docs.google.com/forms/d/e/1FAIpQLSfuU7jaSkGssjbG96h8uLk3ApmWDYxNzbzu-FAgkiF2DhroqA/viewform?usp=sf_link"
-          width="100%" 
-          height="1000px" 
-          frameborder="0" 
-          marginheight="0" 
-          marginwidth="0">
-          Loading…
-        </iframe>
+        <h1 class="hero-title">Get in Touch</h1>
+      </div>
+      <div>
+        <form action="https://formspree.io/f/trading@amherst.edu" method="POST">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
       </div>
     </section>
 
     <footer class="footer">
-      <p>© 2024 i2i Amherst Venture Accelerator. All rights reserved.</p>
+      <p>© 2025 Amherst College Quant Club. All rights reserved.</p>
     </footer>   
   </main>
 
@@ -69,15 +76,15 @@
   <script>
     VANTA.NET({
       el: "#vanta-bg",
-      color: 0xff5722,
-      backgroundColor: 0xfafafa,
+      color: 0x3E2B7A,         // Amherst Purple
+      backgroundColor: 0xffffff, // White background
       points: 10.00,
       maxDistance: 20.00,
       spacing: 15.00,
       waveHeight: 30.00,
       zoom: 0.50
     });
-  </script>
+</script>
 
 </body>
 </html>

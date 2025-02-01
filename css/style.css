@@ -7,10 +7,10 @@
 }
 
 :root {
-  --primary-color: #E94917;
-  --secondary-color: #FF7C36;
-  --text-color: #000000;
-  --accent-color: #F8E0C9;
+  --primary-color: #3E2B7A;     /* Amherst Purple */
+  --secondary-color: #5E4A9A;   /* Lighter purple for secondary elements */
+  --text-color: #000000;        /* Keeping black text */
+  --accent-color: #E6E1F2;      /* Light purple accent */
   --font-family: 'Inter', sans-serif;
 }
 
@@ -514,4 +514,104 @@ a {
 
 .orange-bold {
   color: var(--secondary-color); /* Use the same color as your primary color */
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  margin: 4rem auto 2rem;  /* Increased top margin */
+  width: 90%;            /* Control width */
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 100px 20px 40px;  /* More top padding on mobile */
+    gap: 3rem;                /* More space between elements */
+  }
+
+  .hero-text {
+    margin-bottom: 2rem;      /* Space after title */
+  }
+
+  .contact-form {
+    margin: 2rem auto;
+    padding: 1.5rem;
+    width: 95%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 120px 15px 30px;  /* Even more top padding on small screens */
+  }
+  
+  .hero-text {
+    margin-bottom: 3rem;      /* More space after title */
+  }
+
+  .contact-form {
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 0;        /* Full width on smallest screens */
+  }
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: var(--font-family);
+}
+
+.submit-btn {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: var(--secondary-color);
+}
+
+.register-cta {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: white !important;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-size: clamp(20px, 1.5vw, 28px);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(62, 43, 122, 0.2);
+  margin-top: 2rem;
+}
+
+.register-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(62, 43, 122, 0.3);
+  background-color: var(--secondary-color);
 }
