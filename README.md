@@ -1,8 +1,6 @@
 <img alt="i2i logo" src="images/i2i-logo.png" align="right" width="150px"/>
 
-# Ideas 2 Innovation: Official Website
-
-Welcome to the repository of Ideas 2 Innovation website!
+# Amherst College Quant Club
 
 ## Directory Structure
 
