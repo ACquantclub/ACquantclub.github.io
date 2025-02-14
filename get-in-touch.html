@@ -31,23 +31,21 @@
 
   <main id="vanta-bg" class="main-content">
     <section class="hero">
-      <div class="hero-text" data-aos="fade-right">
-        <h1 class="hero-title">Get in Touch</h1>
-      </div>
-      <div>
-        <form action="https://formspree.io/f/mvgzrjrb" method="POST">
-          <label>
-            Your email:
-            <input type="email" name="email">
+      <form action="https://formspree.io/f/mvgzrjrb" method="POST">
+        <div class="contact-form-group">
+          <label class="contact-label">
+            Your email
+            <input type="email" name="email" class="contact-input" required>
           </label>
-          <label>
-            Your message:
-            <textarea name="message"></textarea>
+        </div>
+        <div class="contact-form-group">
+          <label class="contact-label">
+            Your message
+            <textarea name="message" class="contact-input contact-textarea" required></textarea>
           </label>
-          <!-- your other form fields go here -->
-          <button type="submit">Send</button>
-        </form>
-      </div>
+        </div>
+        <button type="submit" class="contact-submit">Send Message</button>
+      </form>
     </section>
 
     <footer class="footer">
