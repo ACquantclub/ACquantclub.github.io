@@ -12,6 +12,46 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Global styles -->
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Replace Vanta background with a simple gradient */
+    body {
+      background: linear-gradient(135deg, #ffffff 0%, #f5f2ff 100%);
+    }
+    .main-content {
+      background: none;
+      position: relative;
+    }
+    /* Add some subtle styling to replace the animation effect */
+    .competition-section {
+      margin: 2rem auto;
+      max-width: 1200px;
+      padding: 2rem;
+    }
+    .result-category {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(62, 43, 122, 0.1);
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      transition: transform 0.3s ease;
+    }
+    .result-category:hover {
+      transform: translateY(-5px);
+    }
+    /* Optimize images */
+    .winner-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      margin: 0.5rem;
+      max-height: 200px;
+    }
+    .winner-img:hover {
+      transform: scale(1.03);
+    }
+  </style>
 </head>
 <body>
 
@@ -29,7 +69,7 @@
     </nav>
   </header>
 
-  <main id="vanta-bg" class="main-content">
+  <main class="main-content">
     <section class="competition-section">
       <div class="container" data-aos="fade-up">
         <h1 class="section-title">2025 Amherst Quant Competition</h1>
@@ -51,9 +91,9 @@
               <li><span class="medal">🌟</span> <strong>Honorable Mention:</strong> Deshan de Mel, Skyler Lee, Megan Li, Allison Klingler</li>
             </ul>
             <div class="winners-photos">
-              <img src="images/quant_comp_2024_winners/estimathon-winners1.jpg" alt="Estimathon 1st Place Winners" class="winner-img">
-              <img src="images/quant_comp_2024_winners/estimathon-winners2.jpg" alt="Estimathon 2nd Place Winners" class="winner-img">
-              <img src="images/quant_comp_2024_winners/estimathon-honorable.jpg" alt="Estimathon Honorable Mention" class="winner-img">
+              <img src="images/quant_comp_2024_winners/estimathon-winners1.jpg" alt="Estimathon 1st Place Winners" class="winner-img" loading="lazy">
+              <img src="images/quant_comp_2024_winners/estimathon-winners2.jpg" alt="Estimathon 2nd Place Winners" class="winner-img" loading="lazy">
+              <img src="images/quant_comp_2024_winners/estimathon-honorable.jpg" alt="Estimathon Honorable Mention" class="winner-img" loading="lazy">
             </div>
             <div class="case-materials">
               <a href="https://github.com/ACquantclub/AQC-2025-Cases/blob/main/Estimathon/Estimathon%20Questions%202025.pdf" class="case-link">Estimathon® Case Materials</a>
@@ -68,9 +108,9 @@
               <li><span class="medal">🌟</span> <strong>Honorable Mention:</strong> Megan Li</li>
             </ul>
             <div class="winners-photos">
-              <img src="images/quant_comp_2024_winners/brainteaser-winner1.jpg" alt="Brainteaser 1st Place Winner" class="winner-img">
-              <img src="images/quant_comp_2024_winners/brainteaser-winner2.jpg" alt="Brainteaser 2nd Place Winner" class="winner-img">
-              <img src="images/quant_comp_2024_winners/brainteaser-honorable.jpg" alt="Brainteaser Honorable Mention" class="winner-img">
+              <img src="images/quant_comp_2024_winners/brainteaser-winner1.jpg" alt="Brainteaser 1st Place Winner" class="winner-img" loading="lazy">
+              <img src="images/quant_comp_2024_winners/brainteaser-winner2.jpg" alt="Brainteaser 2nd Place Winner" class="winner-img" loading="lazy">
+              <img src="images/quant_comp_2024_winners/brainteaser-honorable.jpg" alt="Brainteaser Honorable Mention" class="winner-img" loading="lazy">
             </div>
             <div class="case-materials">
               <a href="https://github.com/ACquantclub/AQC-2025-Cases/blob/main/Brainteasers/Final%20AQC%202025%20Brainteasers%20Battle%20-%20Participant%20Copy.pdf" class="case-link">Brainteaser Questions</a>
@@ -85,8 +125,8 @@
               <li><span class="medal">🥈</span> <strong>2nd Place:</strong> Andreas Rasvanis</li>
             </ul>
             <div class="winners-photos">
-              <img src="images/quant_comp_2024_winners/coding-winner1.jpg" alt="Coding Challenge 1st Place Winner" class="winner-img">
-              <img src="images/quant_comp_2024_winners/coding-winner2.jpg" alt="Coding Challenge 2nd Place Winner" class="winner-img">
+              <img src="images/quant_comp_2024_winners/coding-winner1.jpg" alt="Coding Challenge 1st Place Winner" class="winner-img" loading="lazy">
+              <img src="images/quant_comp_2024_winners/coding-winner2.jpg" alt="Coding Challenge 2nd Place Winner" class="winner-img" loading="lazy">
             </div>
           </div>
           
@@ -98,9 +138,9 @@
               <li><span class="medal">🌟</span> <strong>Honorable Mention:</strong> Isaiah Gonsalves</li>
             </ul>
             <div class="winners-photos">
-              <img src="images/quant_comp_2024_winners/algo-winners1.jpg" alt="Algo Trading 1st Place Winners" class="winner-img">
-              <img src="images/quant_comp_2024_winners/algo-winners2.jpg" alt="Algo Trading 2nd Place Winners" class="winner-img">
-              <img src="images/quant_comp_2024_winners/algo-honorable.jpg" alt="Algo Trading Honorable Mention" class="winner-img">
+              <img src="images/quant_comp_2024_winners/algo-winners1.jpg" alt="Algo Trading 1st Place Winners" class="winner-img" loading="lazy">
+              <img src="images/quant_comp_2024_winners/algo-winners2.jpg" alt="Algo Trading 2nd Place Winners" class="winner-img" loading="lazy">
+              <img src="images/quant_comp_2024_winners/algo-honorable.jpg" alt="Algo Trading Honorable Mention" class="winner-img" loading="lazy">
             </div>
             <div class="case-materials">
               <a href="https://github.com/ACquantclub/AQC-2025-Cases/blob/main/Algo%20Trading/2025_algo_case_packet.pdf" class=case-link>Algo Trading Challenge Materials</a>
@@ -115,9 +155,9 @@
               <li><span class="medal">🌟</span> <strong>Honorable Mention:</strong> Deshan de Mel</li>
             </ul>
             <div class="winners-photos">
-              <img src="images/quant_comp_2024_winners/manual-winner1.jpg" alt="Manual Trading 1st Place Winner" class="winner-img">
-              <img src="images/quant_comp_2024_winners/manual-winner2.jpg" alt="Manual Trading 2nd Place Winner" class="winner-img">
-              <img src="images/quant_comp_2024_winners/manual-honorable.jpg" alt="Manual Trading Honorable Mention" class="winner-img">
+              <img src="images/quant_comp_2024_winners/manual-winner1.jpg" alt="Manual Trading 1st Place Winner" class="winner-img" loading="lazy">
+              <img src="images/quant_comp_2024_winners/manual-winner2.jpg" alt="Manual Trading 2nd Place Winner" class="winner-img" loading="lazy">
+              <img src="images/quant_comp_2024_winners/manual-honorable.jpg" alt="Manual Trading Honorable Mention" class="winner-img" loading="lazy">
             </div>
             <div class="case-materials">
               <a href="https://github.com/ACquantclub/manual-trading-platform" class="case-link">Manual Trading Challenge Materials</a>
@@ -130,13 +170,15 @@
               <li><span class="medal">🥇</span> <strong>1st Place:</strong> Megan Li, Skyler Lee, Deshan de Mel</li>
             </ul>
             <div class="winners-photos">
-              <img src="images/quant_comp_2024_winners/strategy-winners.jpg" alt="Strategy & Product Winners" class="winner-img">
+              <img src="images/quant_comp_2024_winners/strategy-winners.jpg" alt="Strategy & Product Winners" class="winner-img" loading="lazy">
             </div>
             <div class="case-materials">
               <a href="https://github.com/ACquantclub/AQC-2025-Cases/blob/main/Strategy%20and%20Product/Strategy%20and%20Product%20Case%20-%20Amherst%20Trading%20Competition-2025.pdf" class="case-link">Strategy & Product Challenge Materials</a>
             </div>
           </div>
         </div>
+      </div>
+    </section>
 
     <footer class="footer">
       <p>© 2025 Amherst College Quant Club. All rights reserved.</p>
@@ -145,24 +187,9 @@
 
   <!-- AOS JS -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <!-- Vanta JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
   <!-- Custom JS -->
   <script src="js/app.js"></script>
   <script src="js/initAOS.js"></script>
-  <script>
-    VANTA.NET({
-      el: "#vanta-bg",
-      color: 0x3E2B7A,         // Amherst Purple
-      backgroundColor: 0xffffff, // White background
-      points: 10.00,
-      maxDistance: 20.00,
-      spacing: 15.00,
-      waveHeight: 30.00,
-      zoom: 0.50
-    });
-  </script>
 
 </body>
 </html>
